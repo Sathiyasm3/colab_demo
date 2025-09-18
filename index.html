@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Battle Royale: Click Bots</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="hud">
+        <span id="kills">Kills: 0</span>
+        <span id="timer">Time: 0:00</span>
+        <span id="mode">Mode: Timed</span>
+    </div>
+    <canvas id="gameCanvas" width="900" height="600"></canvas>
+    <div id="overlay" style="display:none;"></div>
+
+    <div id="controls">
+        <button onclick="startGame('timed')">Start Timed Mode</button>
+        <button onclick="startGame('killall')">Start Kill-All Mode</button>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
